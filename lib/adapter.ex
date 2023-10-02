@@ -12,7 +12,6 @@ defmodule Guardian.DB.Adapter do
   @typep schema_or_changeset :: schema() | changeset()
   @typep queryable :: query() | schema()
   @typep opts :: keyword()
-  @typep id :: pos_integer() | binary() | Ecto.UUID.t()
 
   @doc """
   Retrieves JWT token
