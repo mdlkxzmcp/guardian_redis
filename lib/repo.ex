@@ -67,7 +67,7 @@ defmodule GuardianRedis.Repo do
   @spec delete_all(
           queryable :: Ecto.Queryable.t(),
           opts :: Keyword.t()
-        ) :: {integer(), nil | [term()]}
+        ) :: {integer(), :ok}
   def delete_all(query, _opts \\ []) do
     set_name = query |> sub_elem() |> set_name()
 
