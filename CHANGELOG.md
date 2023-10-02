@@ -10,6 +10,14 @@ in your config to:
 ```elixir
 config :guardian, Guardian.DB, adapter: GuardianRedis.Adapter
 ```
+
+### Added
+- support for all configuration options of Redix (except for name)
+- support for `name_prefix` config
+
+### Breaking
+- `port` and `pool_size` config options have to be integers now
+
 ### Breaking
 - bump `GuardianDB` from 2.1.1 to 3.0.0
 
